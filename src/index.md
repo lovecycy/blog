@@ -6,6 +6,9 @@ hero:
   name: "Blog"
   text: "技术，不止技术"
   tagline: "Not Just Technology."
+  image: 
+    light: "./image/hero.gif"
+    dark: "./image/hero.jpeg"
   # actions:
   #   - theme: brand
   #     text: Markdown Examples
@@ -15,11 +18,13 @@ hero:
   #     link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 
+    icon: 🇨🇳
+    details: 
+  - title: 
+    icon: ™
+    details: 
+  - title: 
+    icon: 🍃
+    details: 
 ---
-
