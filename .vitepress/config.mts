@@ -6,7 +6,7 @@ export default defineConfig({
   titleTemplate: ":title",
   description: "技术，不止技术",
   appearance: 'dark',
-  srcDir: 'src',
+  srcDir: 'src/docs',
   lastUpdated: true,
   themeConfig: {
     siteTitle: 'tan 90°',
