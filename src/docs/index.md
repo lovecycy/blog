@@ -7,8 +7,8 @@ hero:
   text: "技术，不止技术"
   tagline: "Not Just Technology."
   image: 
-    light: "./image/hero.gif"
-    dark: "./image/hero.jpeg"
+    light: "./image/hero.jpg"
+    dark: "./image/hero_dark.jpg"
   # actions:
   #   - theme: brand
   #     text: Markdown Examples

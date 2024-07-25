@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { resolve } from "path";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -43,6 +44,14 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    ],
+
   },
+  vite: {
+    resolve: {
+      'alias': {
+        '@': resolve(process.cwd(), "src")
+      }
+    }
+  }
 })
