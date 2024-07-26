@@ -47,6 +47,10 @@ export default defineConfig({
     ],
 
   },
+  markdown: {
+    math: true,
+    lineNumbers: true
+  },
   vite: {
     resolve: {
       'alias': {
