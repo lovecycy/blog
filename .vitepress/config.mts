@@ -26,8 +26,7 @@ export default defineConfig({
         {
           text: '毛概',
           items: [
-            { text: '导论 马克思主义中国化时代化的历史进程与理论成果', link: '/higherGrade/politicalTheory/毛概/导论 马克思主义中国化时代化的历史进程与理论成果' },
-            { text: 'Runtime API Examples', link: '' }
+            { text: '导论 马克思主义中国化时代化的历史进程与理论成果', link: '/higherGrade/politicalTheory/毛概/导论 马克思主义中国化时代化的历史进程与理论成果/' },
           ]
         }
       ],
@@ -35,8 +34,7 @@ export default defineConfig({
         {
           text: 'Examples',
           items: [
-            { text: 'Markdown Examples', link: '/markdown-examples' },
-            { text: 'Runtime API Examples', link: '/api-examples' }
+            { text: '不定积分', link: '/higherGrade/higherMathematics/不定积分/' }
           ]
         }
       ]
