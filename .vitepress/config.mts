@@ -3,9 +3,10 @@ import { resolve } from "path";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  lang: 'zh-cn',
   title: "tan 90° Blog",
   titleTemplate: ":title",
-  description: "技术，不止技术",
+  // description: "技术，不止技术",
   appearance: 'dark',
   srcDir: 'src/docs',
   lastUpdated: true,
@@ -32,7 +33,7 @@ export default defineConfig({
       ],
       '/higherGrade/higherMathematics/': [
         {
-          text: 'Examples',
+          text: '高等数学',
           items: [
             { text: '不定积分', link: '/higherGrade/higherMathematics/不定积分/' }
           ]

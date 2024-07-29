@@ -3,12 +3,13 @@
 layout: home
 
 hero:
-  name: "Blog"
-  text: "技术，不止技术"
-  tagline: "Not Just Technology."
+  # name: "Tan 90°"
+  # text: "技术，不止技术"
+  # tagline: "Not Just Technology."
+  tagline: "Welcome to my blog."
   image: 
-    light: "./image/hero.jpg"
-    dark: "./image/hero_dark.jpg"
+    light: "/hero.jpg"
+    dark: "/hero_dark.jpg"
   # actions:
   #   - theme: brand
   #     text: Markdown Examples
@@ -18,13 +19,13 @@ hero:
   #     link: /api-examples
 
 features:
-  - title: 
-    icon: 🇨🇳
-    details: 
-  - title: 
-    icon: ™
-    details: 
-  - title: 
-    icon: 🍃
-    details: 
+  # - title: 
+  #   icon: 🇨🇳
+  #   details: 
+  # - title: 
+  #   icon: ™
+  #   details: 
+  # - title: 
+  #   icon: 🍃
+  #   details: 
 ---
