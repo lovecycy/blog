@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { resolve } from "path";
+import {useGitTimestamp} from '../node/getGitLogs.ts'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -12,6 +13,9 @@ export default defineConfig({
   lastUpdated: true,
   themeConfig: {
     siteTitle: 'tan 90°',
+    search: {
+      provider: 'local'
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
@@ -49,6 +53,9 @@ export default defineConfig({
   markdown: {
     math: true,
     lineNumbers: true
+  },
+  async transformPageData(pageData, { siteConfig }) {
+    pageData.t = await useGitTimestamp(resolve(siteConfig.srcDir,pageData.filePath))
   },
   vite: {
     resolve: {
