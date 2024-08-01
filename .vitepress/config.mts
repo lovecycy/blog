@@ -1,7 +1,12 @@
 import { defineConfig } from 'vitepress'
 import { resolve } from "path";
-import {useGitTimestamp} from '../node/getGitLogs.ts'
+import { getGitLogs } from '../node/getGitLogs.js'
 
+declare module 'vitepress' {
+  interface PageData {
+    gitLogs: string
+  }
+}
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-cn',
@@ -55,7 +60,7 @@ export default defineConfig({
     lineNumbers: true
   },
   async transformPageData(pageData, { siteConfig }) {
-    pageData.t = await useGitTimestamp(resolve(siteConfig.srcDir,pageData.filePath))
+    pageData.gitLogs = await getGitLogs(resolve(siteConfig.srcDir, pageData.filePath))
   },
   vite: {
     resolve: {
