@@ -4,7 +4,14 @@ import { getGitLogs } from '../node/getGitLogs.js'
 
 declare module 'vitepress' {
   interface PageData {
-    gitLogs: string
+    /**
+     * git日志信息列表
+     */
+    gitLogs: {
+      commitHash: string;
+      commitDate: string;
+      message: string;
+    }[]
   }
 }
 // https://vitepress.dev/reference/site-config

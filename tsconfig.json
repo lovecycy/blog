@@ -1,0 +1,19 @@
+{
+    "include": [
+        ".vitepress/**/*.ts",
+        "./types",
+        "src/**/*.vue"
+    ],
+    "exclude": [
+        "node_modules",
+        ".vitepress/cache"
+    ],
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ]
+        }
+    }
+}
