@@ -46,7 +46,7 @@ function parseGitLogOutput(logs) {
   for (let i = 0; i < logs.length; i += 4) {
     const commitHash = logs[i].trim().split(' ')[1];
     // const author = logs[i + 1].match(/Author:\s*(.*)/)[1];
-    const commitDate = logs[i + 2].match(/Date:\s*(.*)/)[1];
+    const commitDate = new Date(logs[i + 2].match(/Date:\s*(.*)/)[1]).getTime();
     const message = logs[i + 3].trim();
 
     commits.push({

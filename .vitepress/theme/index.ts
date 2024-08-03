@@ -1,6 +1,7 @@
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import { Vue } from 'vitepress/vue-demi'
+import '@/animate/index.js'
 import CommitRecord from '@/components/CommitRecord/index.vue'
 
 const { h } = Vue
