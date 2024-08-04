@@ -4,7 +4,11 @@
 
 ## 一、原函数的定义
 
+$$ F'(x) = f(x) $$
+
 ## 二、不定积分的定义
+
+$$ \int f(x)dx = F(x) $$
 
 ## 三、不定积分运算性质
 
@@ -69,3 +73,7 @@ $\int \frac{-1}{x^2}dx = \frac{1}{x} + C$
 (3). $\int F(\sqrt{x}){\color{yellow}\frac{1}{2\sqrt{x}}dx} = \int F(\sqrt{x})d\sqrt{x}$
 
 (4). $\int F(\frac{1}{x}){\color{yellow}\frac{-1}{x^2}dx} = \int F(\frac{1}{x})d\frac{1}{x}$
+
+### 第二类换元积分法
+
+1. 三角代换
