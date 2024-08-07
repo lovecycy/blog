@@ -1,13 +1,15 @@
 <template>
-    <div :class="STATUS_CODE[status]" id="animate-container">
-        <slot></slot>
+    <div class="animate-container">
+        <div :class="STATUS_CODE[status]" class="animate-inner">
+            <slot></slot>
+        </div>
     </div>
 </template>
 
 <script setup>
 const STATUS_CODE = {
-   in: 'in',
-   out: 'out'
+    in: 'in',
+    out: 'out'
 }
 defineProps({
     status: String
@@ -16,25 +18,28 @@ defineProps({
 </script>
 
 <style scoped>
-#animate-container{
-    background-color: #fff;
-}
-#animate-container.in{
+.animate-container {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-left: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+.animate-inner.in {
     height: 42px;
     width: 42px;
     border-radius: 50px;
-    background-color: transparent;
-    box-shadow: var(--vp-shadow-1);
-    cursor: pointer;
-    transition: all 1s;
+    transition: width .2s,
+        height .2s,
+        border-radius .1s ease-in;
 }
-#animate-container.out{
-    width: 150px;
-    height: 300px;
 
+.animate-inner.out {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    transition: width .2s,
+        height .2s,
+        border-radius .1s ease-out;
 }
 </style>
