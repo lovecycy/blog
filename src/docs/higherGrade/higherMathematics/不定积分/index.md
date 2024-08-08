@@ -77,3 +77,9 @@ $\int \frac{-1}{x^2}dx = \frac{1}{x} + C$
 ### 第二类换元积分法
 
 1. 三角代换
+
+(1). $\sqrt{a^2-x^2} \Rightarrow x=asint$
+
+(2). $\sqrt{a^2+x^2} \Rightarrow x=atant$
+
+(3). $\sqrt{x^2-a^2} \Rightarrow x=asect$
