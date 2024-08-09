@@ -78,8 +78,25 @@ $\int \frac{-1}{x^2}dx = \frac{1}{x} + C$
 
 1. 三角代换
 
-(1). $\sqrt{a^2-x^2} \Rightarrow x=asint$
+    (1). $\sqrt{a^2-x^2} \Rightarrow 令x=asint$
 
-(2). $\sqrt{a^2+x^2} \Rightarrow x=atant$
+    (2). $\sqrt{a^2+x^2} \Rightarrow 令x=atant$
 
-(3). $\sqrt{x^2-a^2} \Rightarrow x=asect$
+    (3). $\sqrt{x^2-a^2} \Rightarrow 令x=asect$
+
+2. 无理根式的换元
+
+    (1). $\sqrt[n]{ax+b} \Rightarrow 令t=\sqrt[n]{ax+b}$
+    ...
+
+:::info
+
+1. 假分式：分子最高项系数大于分母
+
+2. 真分式
+
+假->真：降系数，凑分子乘数，再通分。
+
+![假分式转真分式](./image/分式转换.png)
+
+:::
